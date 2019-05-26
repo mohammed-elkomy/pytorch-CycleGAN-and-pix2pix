@@ -50,7 +50,7 @@ if __name__ == '__main__':
             epoch_iter += opt.batch_size
 
             for key in data:
-                print(key.shape)
+                print(data[key].shape)
             exit()
             model.set_input(data)  # unpack data from dataset and apply preprocessing
             model.optimize_parameters()  # calculate loss functions, get gradients, update network weights
